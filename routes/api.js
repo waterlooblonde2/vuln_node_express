@@ -7,6 +7,7 @@ router.get('/search', function (req, res, next) {
   const searchText = req.query.searchText !== undefined ? req.query.searchText : '';
   console.log(req.query);
   console.log('search text: ' + searchText);
+  /*
   searchService.searchByName(searchText, function (err, ret) {
     if (err) {
       res.json(err);
@@ -15,7 +16,7 @@ router.get('/search', function (req, res, next) {
       res.json(ret);
     }
   });
-
+*/
 });
 
 module.exports = router;
